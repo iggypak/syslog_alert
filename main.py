@@ -22,7 +22,7 @@ def alert_if_error(syslog_file):
                 bot.send_message(int(config['TELEGRAM_CONFIG']['CHAT_ID']), config['TELEGRAM_CONFIG']['MSG_ERROR'])
 
 
-
+alert_if_error('/var/log/syslog')
 
 
 
